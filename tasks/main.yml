@@ -1,0 +1,50 @@
+---
+- name: Install base packages
+  apt: name={{ item }} state=installed
+  with_items:
+    - vim
+    - tree
+    - ntpdate
+    - htop
+    - git
+    - wget
+    - python-pip
+    - python3-pip
+    - openssl
+
+- name: Place ntpdate cron file in cron.d
+  template:
+    src: ntpdate.j2
+    dest: /etc/cron.d/ntpdate
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Disable IPv6 default in sysctl
+  sysctl:
+    name: net.ipv6.conf.default.disable_ipv6
+    value: '1'
+    state: present
+    reload: yes
+
+- name: Disable IPv6 onn all interfaces in sysctl
+  sysctl:
+    name: net.ipv6.conf.all.disable_ipv6
+    value: '1'
+    state: present
+    reload: yes
+
+- name: Disable IPv4 redirects accept in sysctl
+  sysctl:
+    name: net.ipv4.conf.all.accept_redirects
+    value: '0'
+    state: present
+    reload: yes
+
+- name: Disable IPv4 redirects send in sysctl
+  sysctl:
+    name: net.ipv4.conf.all.send_redirects
+    value: '0'
+    state: present
+    reload: yes
+

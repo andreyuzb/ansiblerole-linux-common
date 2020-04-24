@@ -1,0 +1,7 @@
+# Cron job of ntpdate command
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+*/30 * * * * root  /usr/sbin/ntpdate 1.ru.pool.ntp.org
