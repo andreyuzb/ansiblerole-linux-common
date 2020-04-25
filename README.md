@@ -10,4 +10,5 @@ Main functions of the Role:
 - Configuring ntp client to synchronize;
 - Setting some sysctl.conf variables (Disable IPv6, Disable IP redirect);
 
-
+All this tasks, I previously made by myself on every server. Now It can
+be fullfiled with this Ansible Role.
