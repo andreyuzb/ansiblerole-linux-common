@@ -6,8 +6,8 @@ This Role can be used
 
 Main functions of the Role:
 
-- George Washington
-- John Adams
-- Thomas Jefferson
+- Installing apt packets, that can be extremly needed during OS work;
+- Configuring ntp client sync;
+- 
 
 
