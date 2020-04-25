@@ -1,5 +1,7 @@
 # ansiblerole-linux-common
 
-Basic Role for Configuring Linux Operating System
+Basic Role for Configuring Linux Operating System (especially Ubuntu Linux).
+
+This Role can be used
 
 
