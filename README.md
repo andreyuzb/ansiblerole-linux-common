@@ -7,7 +7,7 @@ This Role can be used
 Main functions of the Role:
 
 - Installing apt packets, that can be extremly needed during OS work;
-- Configuring ntp client sync;
-- 
+- Configuring ntp client to synchronize;
+- Setting some sysctl.conf variables (Disable IPv6, Disable IP redirect);
 
 
