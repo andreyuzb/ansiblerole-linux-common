@@ -4,7 +4,7 @@
 
 Basic Role for Configuring Linux Operating System (especially Ubuntu Linux).
 
-This Role can be used
+This Role can be used during initialization of Virtual Machines and Servers.
 
 Main functions of the Role:
 
