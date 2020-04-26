@@ -12,3 +12,6 @@ Main functions of the Role:
 
 All this tasks, I previously made by myself on every server. Now It can
 be fullfiled with this Ansible Role.
+
+Author of the Role - Andrey Useinov aka andreyus. Description of the Role
+on Russian Language can be found on blog - asd [GitHub](http://github.com)
