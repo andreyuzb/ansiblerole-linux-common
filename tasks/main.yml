@@ -1,4 +1,8 @@
 ---
+- name: Update package list
+  apt:
+    update_cache: yes
+
 - name: Install base packages
   apt: name={{ item }} state=installed
   with_items:
